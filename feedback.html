@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Müşteri Hizmetleri</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><a href="/">Veilwood Sovereigns</a></div>
+        <ul>
+            <li><a href="/">Anasayfa</a></li>
+            <li><a href="/shop">Mağaza</a></li>
+            <li><a href="/sepet">Sepet</a></li>
+            <li><a href="/feedback">Müşteri Hizmetleri</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="overlay"></div>
+<div class="fog-overlay"></div>
+<div class="snow"></div>
+
+<div class="containere">
+    <h1>Müşteri Hizmetleri</h1>
+    <p>
+        Yaşadığınız sorunları, önerilerinizi veya mağaza ile ilgili taleplerinizi
+        buradan bizimle paylaşabilirsiniz.
+    </p>
+
+    <form class="feedback-form" method="POST">
+
+        <select name="type" required>
+            <option value="">Neden Yazıyorsunuz?</option>
+            <option value="site">Siteyi Geliştirmek İçin</option>
+            <option value="shop">Mağaza / Sipariş Sorunu</option>
+            <option value="contact">Bizimle İletişime Geçmek</option>
+        </select>
+
+        <input type="text" name="name" placeholder="Adınız">
+
+        <input type="email" name="email" placeholder="E-posta" required>
+
+        <textarea name="message" placeholder="Mesajınız" required></textarea>
+
+        <button type="submit">Gönder</button>
+
+    </form>
+</div>
+
+<footer class="footer">
+    <p>© 2025 Veilwood Sovereigns</p>
+</footer>
+
+</body>
+</html>
